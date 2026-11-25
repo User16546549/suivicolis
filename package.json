@@ -1,0 +1,9 @@
+{
+  "name": "suivicolis",
+  "version": "1.0.0",
+  "description": "TLC - suivi de colis (demo TP3)",
+  "main": "app.js",
+  "scripts": { "start": "node app.js" },
+  "engines": { "node": ">=22" },
+  "dependencies": { "express": "^4.21.0", "mssql": "^11.0.1" }
+}
