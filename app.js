@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
       .query('SELECT COUNT(*) AS total, MAX(horodatage) AS derniere FROM dbo.visites');
     const { total } = r.recordset[0];
     const derniere = new Date(r.recordset[0].derniere).toLocaleString('fr-FR', { timeZone: 'Europe/Paris' });
-    res.send(`<h1>SuiviColis - TLC</h1>
+    res.send(`<h1>SuiviColis - TLC (deploye par GitHub Actions)</h1>
       <p>Visites enregistrees : <b>${total}</b> (derniere : ${derniere})</p>
       <p>Instance : ${os.hostname()} - Node ${process.version}</p>`);
   } catch (e) {
